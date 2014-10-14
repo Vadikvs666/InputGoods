@@ -24,8 +24,8 @@ SOURCES += main.cpp\
     params.cpp \
     vvsresult.cpp \
     vsite.cpp \
-    ../Products/listelem.cpp \
-    ../Products/products.cpp \
+    Products/listelem.cpp \
+    Products/products.cpp \
     tolatin.cpp
 
     tolatin.cpp
@@ -37,8 +37,8 @@ HEADERS  += mainwindow.h \
     params.h \
     vvsresult.h \
     vsite.h \
-    ../Products/listelem.h \
-    ../Products/products.h \
+    Products/listelem.h \
+    Products/products.h \
     toLatin.h
 
     tolatin.h
