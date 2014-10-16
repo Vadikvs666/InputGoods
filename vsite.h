@@ -8,8 +8,8 @@
 #include <QtWidgets/QPushButton>
 #include "dbsingl.h"
 #include "QString"
-#include "../products/products.h"
-#include "../products/listelem.h"
+#include "products/products.h"
+#include "products/listelem.h"
 #include <iostream>
 #include <fstream>
 #include <algorithm>
