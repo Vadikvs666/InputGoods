@@ -63,7 +63,7 @@ void VSite::on_VConnectButton_clicked()
     load_goods_csv(3,*prod,f1);
     QVariant temp =prod->count_elem();
     QString mess=temp.toString();
-    QMessageBox::information(NULL,"Количество элементов в бд", mess,  QMessageBox::Ok);
+    QMessageBox::information(NULL,"Количество элементов в файле", mess,  QMessageBox::Ok);
     VAddDataButton->setEnabled(true);
 }
 
