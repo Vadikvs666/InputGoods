@@ -45,3 +45,5 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui \
         searchpost.ui
+
+RESOURCES +=
