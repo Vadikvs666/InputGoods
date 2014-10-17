@@ -63,13 +63,13 @@ void VSite::on_VConnectButton_clicked()
     load_goods_csv(3,*prod,f1);
     QVariant temp =prod->count_elem();
     QString mess=temp.toString();
-    QMessageBox::information(NULL,"Количество элементов в бд", mess,  QMessageBox::Ok);
+    QMessageBox::information(NULL,"Количество элементов в файле", mess,  QMessageBox::Ok);
     VAddDataButton->setEnabled(true);
 }
 
 void VSite::on_VGetMaxButton_clicked()
 {
-    BD->getInstance("Driver={MySQL ODBC 3.51 Driver};Server=31.22.4.108;Port=3306;Database=hoztovar_hoztovar;User=hoztovar_host;Password=kukla;Option=3;");
+    BD->getInstance("hoztovarmoguta");
     QString query="SELECT Max(id) FROM mg_product";
     QMessageBox::information(NULL,"Количество элементов в бд", BD->QueryOneAnswer(query),  QMessageBox::Ok);
 }
@@ -78,7 +78,7 @@ void VSite::on_VAddDataButton_clicked()
 {
     QTextCodec::setCodecForLocale(QTextCodec::codecForName("UTF-8"));
     BD->getInstance("hoztovarmoguta");
- //   BD->Setdb("Driver={MySQL ODBC 3.51 Driver};Server=31.22.4.108;Port=3306;Database=hoztovar_podarokmoguta;User=hoztovar_host;Password=kukla;Option=3;");
+
     if(prod->count_elem()>0)
     {
         for(int i=0;i<prod->count_elem();i++)
